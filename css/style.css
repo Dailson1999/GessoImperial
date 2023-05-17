@@ -6,6 +6,7 @@
     text-decoration: none;
     outline: none;
 }
+
 /* .titulo1{
     text-decoration: none;
     color: #fff;
@@ -17,7 +18,9 @@
     font-size: 100px;
     line-height: 80px;
 } */
+
 .p1{
+
     text-decoration: none;
     color: #fff;
     text-align: center;
@@ -58,7 +61,21 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
-.biblia{
+.mainSub{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+     background-color: #fff;
+    }
+.quadrados{
+    top: 20%;
+    left: 50%;
+}    
+/*.biblia{
     position: static;
     text-decoration: underline #000000;
     color: #fff;
@@ -74,7 +91,7 @@
 a {
     text-decoration: none;
     height: 25vh;
-}
+}*/
 
 ul {
     text-decoration: none;
@@ -89,11 +106,18 @@ nav {
     height: 10vh;
     
 }
-
-main {
+img {
+    position: absolute;
+    bottom: 500px;
+    left: 200px;
+  }
+.main {
     background: url(bg4.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 90vh;
+
 }
 
 .nav-list {
@@ -105,7 +129,7 @@ main {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
-    height: 30px;
+    height: 10px;
 }
 
 .mobile-menu {
@@ -134,9 +158,9 @@ main {
     .nav-list {
         position: absolute;
         top: 10vh;
-        right: 100;
-        width: 100vw;
-        height: 90vh;
+        
+        width: 500vh;
+        height: 500vh;
         background: #154c79;
         flex-direction: column;
         align-items: center;
@@ -152,6 +176,11 @@ main {
     }
 }
 
+/*svg{ "wave backfround"
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}*/
 .nav-list.active {
     transform: translateX(0);
 }
