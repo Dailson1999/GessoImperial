@@ -1,0 +1,209 @@
+/*seleciona todas as tags */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+/* .titulo1{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Garamond;
+    font-size: 100px;
+    line-height: 80px;
+} */
+
+.p1{
+
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Garamond;
+    font-size: 60px;
+}
+.p2{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 50px;
+    
+}
+.p3{
+    text-decoration: underline;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.p4{
+    text-decoration: underline;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    text-shadow: 2px 2px 4px #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.mainSub{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+     background-color: #fff;
+    }
+.quadrados{
+    top: 20%;
+    left: 50%;
+}    
+/*.biblia{
+    position: static;
+    text-decoration: underline #000000;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    font-size: 25px;
+    left: 250px;
+    top: 400px;
+}
+.video{
+    margin-left: 3%;
+}
+a {
+    text-decoration: none;
+    height: 25vh;
+}*/
+
+ul {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #154c79;
+    height: 10vh;
+    
+}
+img {
+    position: absolute;
+    bottom: 500px;
+    left: 200px;
+  }
+.main {
+    background: url(bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    height: 10px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow: hidden;
+    }
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        cursor: pointer;
+      }
+    .nav-list {
+        position: absolute;
+        top: 10vh;
+        
+        width: 500vh;
+        height: 500vh;
+        background: #154c79;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%); /* Corrigido para translateX em vez de translate */
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+        animation: navLinkFade 0.5s ease-in forwards; /* Adicionada animação de fade para os itens de menu */
+    }
+}
+
+/*svg{ "wave backfround"
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}*/
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px); /* Corrigido para translateX em vez de translate */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Corrigido para translateX em vez de translate */
+    }
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
